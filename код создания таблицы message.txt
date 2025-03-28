@@ -1,0 +1,13 @@
+CREATE TABLE message (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user VARCHAR(255) NOT NULL,
+    message_text TEXT NOT NULL,
+    message_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO message (user, message_text) VALUES
+('Alice', 'Привет, как дела?'),
+('Bob', 'Все отлично, спасибо!'),
+('Charlie', 'Какой сегодня день?'),
+('Dave', 'Сегодня пятница!'),
+('Eve', 'Отличный день для программирования.');
