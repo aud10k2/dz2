@@ -21,7 +21,7 @@ function findlongestwords(string $text): array {
     return array_unique($longestwords); 
 }
 
-$text = "Это очень очень очень длинное слово, а это короткое и снова очень-очень-очень длинное!";
+$text = "Это ааааааааааааааааа длинное слово, а это короткое и снова очень-очень-очень длинное!";
 $longestwords = findlongestwords($text);
 
 echo"$text";
